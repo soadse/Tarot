@@ -42,16 +42,24 @@ header {
 
 
 /* Bloco com efeito de animação de digitando */
+#msgBemVindo div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #msgBemVindo #p1 {
     margin: 10px;
+    margin-top: 20px;
     font-family: monospace;
     border-right: 4px solid;
     white-space: nowrap;
     width: 20ch;
     overflow: hidden;
     font-size: 1.5rem;
-    animation: animaTexto steps(20) 3s 4.1s, animaMarcador 0.5s linear infinite 4.1s, showw 4.5s forwards;
+    animation: animaTexto steps(20) 2s 4.1s, animaMarcador 0.5s linear infinite 4.1s, showw 4.5s forwards;
 }
+
 @keyframes animaMarcador {
     50% {
         border-right: transparent;
