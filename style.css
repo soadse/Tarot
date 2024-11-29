@@ -1,0 +1,38 @@
+@charset "UTF-8";
+:root {
+    --corRoxa: #9662B5;
+    --corRoxoEscuro: #2E195C;
+    --corAzul: #90A6D5;
+    --corAzulEscuro: #6E79B9;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#apresentacao {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#apresentacao img {
+    width: 0px;
+    animation: apresentacao 1.5s forwards;
+}
+@keyframes apresentacao {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100px;
+    }
+    
+}
