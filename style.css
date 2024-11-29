@@ -86,11 +86,11 @@ body {
     
 }
 #apresentacao #pMsg {
-    font-size: 1.5rem;
-    font-weight: lighter;
+    font-family: var(--fonteAssinatura);
+    font-size: 2rem;
 }
 #apresentacao #assinatura {
     font-family: var(--fonteAssinatura);
-    font-size: 1.50rem;
+    font-size: 1.5rem;
 } 
 /* Fim do bloco de apresentação */
