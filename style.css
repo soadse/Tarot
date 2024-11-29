@@ -57,7 +57,7 @@ header {
     width: 20ch;
     overflow: hidden;
     font-size: 1.5rem;
-    animation: animaTexto steps(20) 2s 4.1s, animaMarcador 0.5s linear infinite 4.1s, showw 4.5s forwards;
+    animation: animaTexto steps(20) 2s 4s, animaMarcador 0.5s linear infinite 4s, showw 4.5s forwards;
 }
 
 @keyframes animaMarcador {
