@@ -16,6 +16,18 @@
 body {
     width: 100vw;
     height: 100vh;
+    animation: blockScroll 4.5s forwards;
+}
+@keyframes blockScroll {
+    0% {
+        overflow: hidden;
+    }
+    99% {
+        overflow: hidden;
+    }
+    100% {
+        overflow: auto;
+    }
 }
 
 header {
@@ -25,7 +37,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: show 5s forwards;
+    animation: show 4.5s forwards;
 }
 
 @keyframes show {
@@ -43,6 +55,5 @@ header {
     100% {
         display: flex;
         opacity: 1;
-
     }
 }
