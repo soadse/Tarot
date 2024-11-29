@@ -37,10 +37,55 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: show 4.5s forwards;
+    animation: showw 4.5s forwards;
 }
 
-@keyframes show {
+
+/* Bloco com efeito de animação de digitando */
+#msgBemVindo #p1 {
+    margin: 10px;
+    font-family: monospace;
+    border-right: 4px solid;
+    white-space: nowrap;
+    width: 20ch;
+    overflow: hidden;
+    font-size: 1.5rem;
+    animation: animaTexto steps(20) 3s 4.1s, animaMarcador 0.5s linear infinite 4.1s, showw 4.5s forwards;
+}
+@keyframes animaMarcador {
+    50% {
+        border-right: transparent;
+    }
+}
+@keyframes animaTexto {
+    0% {
+        width: 0;
+    }
+}
+#msgBemVindo #p2 {
+    margin: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--corRoxoEscuro);
+    animation: showw 9s forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes showw {
     0% {
         display: none;
         opacity: 0;
