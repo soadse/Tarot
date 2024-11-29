@@ -30,9 +30,11 @@ body {
 @keyframes apresentacao {
     0% {
         width: 0px;
+        overflow: hidden;
     }
     100% {
         width: 100px;
+        overflow: hidden;
     }
     
 }
