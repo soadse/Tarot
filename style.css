@@ -20,7 +20,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 body {
     width: 100vw;
     height: 100vh;
@@ -55,6 +54,9 @@ body {
     }
 }
 #apresentacao img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation: apresentacaoImg 1.5s forwards;
     margin-top: 30px;
 }
@@ -85,12 +87,11 @@ body {
     }
     
 }
-#apresentacao #pMsg {
+#apresentacao #msg {
     font-family: var(--fonteAssinatura);
     font-size: 2rem;
 }
 #apresentacao #assinatura {
     font-family: var(--fonteAssinatura);
     font-size: 1.5rem;
-} 
-/* Fim do bloco de apresentação */
+} /* Fim do bloco de apresentação */
