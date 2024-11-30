@@ -25,7 +25,6 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    background-color: var(--corRosaClaro);
     animation: closed 4s forwards;
 }
 @keyframes closed {
