@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/tarot-icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/apresentacao.css">
     <script src="script.js" defer></script>
     <title>Tarot</title>
 </head>
 <body>
-    <div id="apresentacao">
+    <section id="apresentacao" style="display: none;">
         <p id="msg">Seu App de Tarot</p>
         <img src="img/tarot-icone.png" alt="Logo do App">
         <p>By<br><span id="assinatura">Rodrigo Andrade</span></p>
-    </div>
+    </section>
 
     <header></header>
+    <nav>
+        <a href="#" id="itemMenuOpen"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2E195C"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        <a href="#" class="itemMenu">Arcanos Maiores</a>
+        <a href="#" class="itemMenu">Arcano pessoal</a>
+        <a href="#" class="itemMenu">Tiragem de cartas</a>
+        <a href="#" class="itemMenu">Carta do dia</a>
+        <a href="#" class="itemMenu" id="itemMenuClose"><span class="material-symbols-outlined">close</span></a>
+    </nav>
 
     <div id="msgBemVindo">
         <div>
@@ -24,5 +33,26 @@
         </div>
         <p id="p2">Vamos começar esta jornada transformadora?</p>
     </div>
+
+    <section>
+        <article>
+            
+            O tarot é um sistema de cartas utilizado para divinação, autoconhecimento e desenvolvimento espiritual. Sua origem é envolta em mistério, e existem várias teorias sobre como e onde surgiu.
+
+            Origem Histórica
+            Acredita-se que o tarot tenha suas raízes na Europa do século XV, embora existam especulações sobre influências anteriores, incluindo a Cabala judaica e tradições egípcias. As cartas de tarot inicialmente foram utilizadas como um jogo chamado "tarocchi" na Itália, que era popular entre a nobreza. Esse jogo de cartas eventualmente evoluiu para um conjunto de 78 cartas divididas em dois arcanos: o Arcano Maior e o Arcano Menor.
+
+            Estrutura do Tarot
+            O Arcano Maior é composto por 22 cartas, cada uma com um nome específico e simbologias fortes, como O Louco, O Mago, A Imperatriz e A Morte. Essas cartas representam grandes arquétipos e temas universais. O Arcano Menor contém 56 cartas divididas em quatro naipes: Paus, Copas, Espadas e Ouros, cada um com cartas numeradas de 1 a 10 e quatro cartas da corte: Pajem, Cavaleiro, Rainha e Rei.
+
+            Tarot e Esoterismo
+            No final do século XVIII, o tarot começou a ser associado ao ocultismo e ao esoterismo, muito graças ao trabalho de ocultistas como Antoine Court de Gébelin e Éliphas Lévi. Court de Gébelin, um escritor francês, sugeriu que o tarot tinha raízes no antigo Egito e que as cartas continham os segredos do universo. Essas ideias levaram ao desenvolvimento do tarot como uma ferramenta de divinação.
+
+            Modernidade e Popularidade
+            No século XX, o tarot ganhou ainda mais popularidade com a criação do Tarot Rider-Waite, publicado em 1909 por Arthur Edward Waite e ilustrado por Pamela Colman Smith. Este baralho se tornou um dos mais conhecidos e amplamente utilizados no mundo. Hoje, o tarot é utilizado por pessoas de diversas culturas e crenças para reflexão pessoal, meditação, orientação espiritual e previsões.
+
+            A história do tarot é um fascinante entrelaçamento de culturas, simbolismo e espiritualidade. Quer saber mais sobre algum aspecto específico do tarot?
+        </article>
+    </section>
 </body>
 </html>
