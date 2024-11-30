@@ -17,6 +17,7 @@ body {
     width: 100vw;
     height: 100vh;
     animation: blockScroll 4.5s forwards;
+    overflow-x: hidden;
 }
 @keyframes blockScroll {
     0% {
@@ -52,7 +53,7 @@ nav {
 }
 nav a {
     width: 100%;
-    height: 40px;
+    height: 50px;
     text-align: center;
     padding: 10px;
     text-decoration: none;
