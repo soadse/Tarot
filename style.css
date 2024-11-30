@@ -50,6 +50,7 @@ nav {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    animation: showw 4.4s forwards;
 }
 nav a {
     width: 100%;
@@ -122,14 +123,26 @@ nav #itemMenuOpen:not(:hover) {
 } /* Fim do bloco de efeito de digitando */
 
 
+/* Bloco de informações */
 section {
-    background-color: red;
     width: 90%;
+    display: flex;
+    flex-direction: column;
     margin: auto;
+    animation: showw 7.5s forwards;
 }
 section article {
-    
+    margin-top: 40px;
 }
+section article h1 {
+    color: var(--corRoxoEscuro);
+}
+section article h2 {
+    color: var(--corAzulEscuro);
+}
+section article p {
+    margin-bottom: 10px;
+} /* Melhor revisar os tamanhos de p. h1, h2 etcs*/
 
 
 
