@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root {
-    --corRoxa: #9662B5;
-    --corRoxoEscuro: #2E195C;
+    --corRoxa: #6A33AA;
+    --corRoxoEscuro: #420064;
     --corAzul: #90A6D5;
     --corAzulEscuro: #6E79B9;
     --corRosaClaro: #FBEBEC;
@@ -30,7 +30,6 @@ body {
         overflow: auto;
     }
 }
-
 header {
     width: 100%;
     height: 200px;
@@ -40,19 +39,27 @@ header {
     background-position: center;
     animation: showw 4.5s forwards;
 }
+/* Todo conteudo da pagina inicial está dentro de uma section, menos o menu, ele tem sua própria estilização */
+section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    animation: showw 4.5s forwards;
+}
 
 
 /* Bloco de menu */
-nav {
+#menu {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    animation: showw 4.4s forwards;
+    animation: showw 4.5s forwards;
 }
-nav a {
+#menu a {
     width: 100%;
     height: 50px;
     display: flex;
@@ -72,81 +79,58 @@ nav a {
         opacity: 1;
     }
 }
-nav .itemMenu {
+#menu .itemMenu {
     display: none;
 }
-nav .itemMenu:hover {
+#menu .itemMenu:hover {
     background-color: var(--corRoxoEscuro);
     color: white;
     transition: all .3s;
 }
-nav .itemMenu:not(:hover) {
+#menu .itemMenu:not(:hover) {
     transition: all .3s;
 }
-nav #itemMenuOpen:hover {
+#menu #itemMenuOpen:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
     transition: all .3s;
 }
-nav #itemMenuOpen:not(:hover) {
+#menu #itemMenuOpen:not(:hover) {
     transition: all .3s;
 } /* Fim do bloco de menu*/
 
-
-/* Bloco com efeito de animação de digitando */
-#msgBemVindo div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Bloco de saudacao */
+#saudacao {
+    margin-top: 10px;
 }
-#msgBemVindo #p1 {
-    margin: 10px;
-    margin-top: 20px;
-    font-family: monospace;
-    border-right: 4px solid;
-    white-space: nowrap;
-    width: 20ch;
-    overflow: hidden;
-    font-size: 1.5rem;
-    animation: animaTexto steps(20) 2s 4s, animaMarcador 0.5s linear infinite 4s, showw 4.5s forwards;
-}
-@keyframes animaMarcador {
-    50% {
-        border-right: transparent;
-    }
-}
-@keyframes animaTexto {
-    0% {
-        width: 0;
-    }
-}
-#msgBemVindo #p2 {
-    margin: 10px;
-    font-size: 1.5rem;
+#saudacao .saudacao.p1 {
+    font-size: 1.3rem;
     text-align: center;
-    color: var(--corRoxoEscuro);
-    animation: showw 7s forwards;
-} /* Fim do bloco de efeito de digitando */
-
-
-/* Bloco de informações */
-section {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    animation: showw 7.5s forwards;
+    margin-bottom: 10px;  
 }
-section article {
+#saudacao .saudacao.p2 {
+    background-color: var(--corAzul);
+    padding: 10px;
+    border-radius: 0 10px 0 10px;
+}
+#saudacao .saudacao.p3 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+
+
+/* Bloco de conteudo */
+#conteudo article {
     margin-top: 40px;
 }
-section article h1 {
+#conteudo article h1 {
     color: var(--corRoxoEscuro);
 }
-section article h2 {
+#conteudo article h2 {
     color: var(--corAzulEscuro);
 }
-section article p {
+#conteudo article p {
     margin-bottom: 10px;
 } /* Melhor revisar os tamanhos de p. h1, h2 etcs*/
 

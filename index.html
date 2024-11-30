@@ -11,15 +11,15 @@
     <title>Tarot</title>
 </head>
 <body>
-    <section id="apresentacao">
+    <div id="apresentacao">
         <p id="msg">Seu App de Tarot</p>
         <img src="img/tarot-icone.png" alt="Logo do App">
         <p>By<br><span id="assinatura">Rodrigo Andrade</span></p>
-    </section>
+    </div>
 
     <header></header>
 
-    <nav>
+    <nav id="menu">
         <a href="#" id="itemMenuOpen"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2E195C"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
         <a href="#" class="itemMenu">Arcanos Maiores</a>
         <a href="#" class="itemMenu">Arcano pessoal</a>
@@ -28,14 +28,13 @@
         <a href="#" class="itemMenu" id="itemMenuClose"><span class="material-symbols-outlined">close</span></a>
     </nav>
 
-    <div id="msgBemVindo">
-        <div>
-            <p id="p1">Olá, Seja Bem-vindo!</p>
-        </div>
-        <p id="p2">Vamos começar esta jornada transformadora?</p>
-    </div>
+    <section id="saudacao">
+        <p class="saudacao p1">Bem-vindo ao Tarot Místico, o seu portal de autoconhecimento e orientação espiritual.</p>
+        <p class="saudacao p2">Aqui, acreditamos no poder das cartas do tarot para revelar caminhos, trazer clareza e ajudar você a tomar decisões mais conscientes.</p>
+        <p class="saudacao p3">Vamos começar esta jornada transformadora?</p>
+    </section>
 
-    <section>
+    <section id="conteudo">
         <article>
             <h1>O que é o Tarot?</h1>
             <p>O Tarot é um conjunto de cartas que são utilizadas para práticas divinatórias ou de autoconhecimento. Um baralho tradicional de Tarot contém 78 cartas, divididas em dois grupos principais: os Arcanos Maiores e os Arcanos Menores.</p>
