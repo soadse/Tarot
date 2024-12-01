@@ -15,18 +15,9 @@ sol.addEventListener('click', () => {
     sol.style.display = 'none'
     lua.style.display = 'flex'
     sol.style.animation = 'sol 1s forwards'
-    corpo.style.background = '#420064'
+    corpo.style.background = '#121212'
     for(let p of paragrafros){
         p.style.color = 'white'
-    }
-    for(let h1 of titulo01){
-        h1.style.color = 'red'
-    }
-    for(let h2 of titulo02){
-        h2.style.color = 'green'
-    }
-    for(let h3 of titulo03){
-        h3.style.color = 'orange'
     }
 })
 
@@ -34,6 +25,9 @@ lua.addEventListener('click', () => {
     lua.style.display = 'none'
     sol.style.display = 'flex'
     corpo.style.background = 'white'
+    for(let p of paragrafros){
+        p.style.color = 'black'
+    }
 })
 
 

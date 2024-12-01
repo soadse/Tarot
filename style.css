@@ -49,6 +49,7 @@ header, #menu,  #saudacao, section, footer {
 
 
 
+
 header {
     width: 100%;
     height: 200px;
@@ -86,10 +87,12 @@ header div #sol {
 }
 @keyframes sol {
     0% {
+        opacity: 0;
         transform: rotate(0deg);
         transform: translateX(0px);
     }
     100% {
+        opacity: 1;
         transform: rotate(360deg);
         transform: translateX(44px);
     }
@@ -105,15 +108,16 @@ header div #lua {
 }
 @keyframes lua {
     0% {
+        opacity: 0;
         transform: rotate(0deg);
         transform: translateX(0px);
     }
     100% {
+        opacity: 1;
         transform: rotate(360deg);
         transform: translateX(-44px);
     }
 }
-
 
 
 /* Bloco de menu */
@@ -246,7 +250,7 @@ footer {
     width: 100%;
     height: 50px;
     background-color: var(--corRoxoEscuro);
-    margin-top: 50px;
+    margin-top: 30px;
 }
 footer:hover {
     background-color: var(--corRoxa);
