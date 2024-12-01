@@ -29,7 +29,7 @@ body {
     }
 }
 
-header, #menu,  #saudacao, section {
+header, #menu,  #saudacao, section, footer {
     animation: showw 4.1s forwards;
 }
 @keyframes showw {
@@ -126,7 +126,7 @@ header {
     font-size: 1.1rem;
     text-align: center;
     margin: 30px 0 10px 0;
-}
+} /* Fim do bloco de saudacao */
 
 
 /* Bloco de conteudo */
@@ -139,11 +139,13 @@ section {
 }
 section article {
     margin-top: 40px;
+    border-bottom: 1px solid var(--corRoxoEscuro);
 }
 section article .conteudoImg {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     margin: 15px 0px 15px 0;
 }
@@ -154,6 +156,13 @@ section article .conteudoImg .img {
     width: 70%;
     border-radius: 0px 10px 10px 10px;
 }
+section article .conteudoImg.agradecimento p {
+    font-size: 12px;
+}
+section article .conteudoImg.agradecimento p a {
+    text-decoration: none;
+    color: var(--corRoxa);
+}
 section article h1 {
     color: var(--corRoxoEscuro);
     font-size: 1.5rem;
@@ -162,11 +171,31 @@ section article h1 {
 section article h2 {
     color: var(--corRoxa);
     font-size: 1.2rem;
+    margin-top: 15px;
 }
 section article p {
     margin-bottom: 10px;
 } 
 section article strong {
     color: var(--corRoxoEscuro);
+} /* Fim do bloco de conteudo */
+
+
+/* Bloco de roda pé */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: var(--corRoxoEscuro);
+    margin-top: 50px;
 }
-/* Falta termiar!!!!! */
+footer:hover {
+    background-color: var(--corRoxa);
+}
+footer a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
