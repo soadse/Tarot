@@ -246,14 +246,28 @@ section article strong {
 section #sobe {
     position: fixed;
     left: 330px;
-    top: 800px;
+    top: 750px;
     width: 40px;
     height: 54px;
     background-image: url(img/seta.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-} /* Fim do bloco de conteudo */
+    animation: sobe forwards;
+    animation-timeline: view();
+    animation-range: entry 100% cover 100%;
+}
+@keyframes sobe {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        display: flex;
+    }
+}
+/* Fim do bloco de conteudo */
 
 
 /* Bloco de roda pé */
