@@ -13,19 +13,21 @@ let listaConteudo = document.getElementsByTagName("li")
 
 // As cores estão em teste
 
+
+
 sol.addEventListener('click', () => {
     sol.style.display = 'none'
     lua.style.display = 'flex'
     sol.style.animation = 'sol 1s forwards'
     corpo.style.background = '#121212'
     for(let p of paragrafros){
-        p.style.color = 'white'
+        p.style.color = '#E5E6EA'
     }
     for(let ol of tituloLista){
-        ol.style.color = 'white'
+        ol.style.color = '#E5E6EA'
     }
     for(let li of listaConteudo){
-        li.style.color = 'white'
+        li.style.color = '#E5E6EA'
     }
 })
 
@@ -41,6 +43,9 @@ lua.addEventListener('click', () => {
     }
     for(let li of listaConteudo){
         li.style.color = 'black'
+    }
+    for(let a of menuA){
+        a.style.color = '#420064'
     }
 })
 
