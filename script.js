@@ -8,6 +8,8 @@ let paragrafros = document.getElementsByTagName("p")
 let titulo01 = document.getElementsByTagName("h1")
 let titulo02 = document.getElementsByTagName("h2")
 let titulo03 = document.getElementsByTagName("strong")
+let tituloLista = document.getElementsByTagName("ol")
+let listaConteudo = document.getElementsByTagName("li")
 
 // As cores estão em teste
 
@@ -19,6 +21,12 @@ sol.addEventListener('click', () => {
     for(let p of paragrafros){
         p.style.color = 'white'
     }
+    for(let ol of tituloLista){
+        ol.style.color = 'white'
+    }
+    for(let li of listaConteudo){
+        li.style.color = 'white'
+    }
 })
 
 lua.addEventListener('click', () => {
@@ -27,6 +35,12 @@ lua.addEventListener('click', () => {
     corpo.style.background = 'white'
     for(let p of paragrafros){
         p.style.color = 'black'
+    }
+    for(let ol of tituloLista){
+        ol.style.color = 'black'
+    }
+    for(let li of listaConteudo){
+        li.style.color = 'black'
     }
 })
 
