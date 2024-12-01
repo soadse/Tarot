@@ -10,13 +10,15 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     width: 100vw;
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow-x: hidden;
     animation: blockScroll 4.1s forwards;
-    scroll-behavior: smooth;
 }
 @keyframes blockScroll {
     0% {
@@ -243,9 +245,10 @@ section article strong {
 } 
 section #sobe {
     position: fixed;
-    left: 290px;
-    width: 30px;
-    height: 30px;
+    left: 330px;
+    top: 600px;
+    width: 40px;
+    height: 54px;
     background-image: url(img/seta.png);
     background-repeat: no-repeat;
     background-position: center center;
