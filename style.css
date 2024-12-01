@@ -16,6 +16,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow-x: hidden;
     animation: blockScroll 4.1s forwards;
+    scroll-behavior: smooth;
 }
 @keyframes blockScroll {
     0% {
@@ -239,7 +240,31 @@ section article p {
 } 
 section article strong {
     color: var(--corRoxoEscuro);
-} /* Fim do bloco de conteudo */
+} 
+section #sobe {
+    position: fixed;
+    left: 290px;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/seta.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    animation: sobe forwards;
+    animation-timeline: view();
+    animation-range: entry 100% cover 100%;
+}
+@keyframes sobe {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        display: flex;
+    }
+}
+/* Fim do bloco de conteudo */
 
 
 /* Bloco de roda pé */
