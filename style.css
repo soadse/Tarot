@@ -145,10 +145,14 @@ section article .conteudoImg {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 10px 0px 10px 0;
+    margin: 15px 0px 15px 0;
 }
 section article .conteudoImg img {
     width: 60%;
+}
+section article .conteudoImg .img {
+    width: 70%;
+    border-radius: 0px 10px 10px 10px;
 }
 section article h1 {
     color: var(--corRoxoEscuro);
