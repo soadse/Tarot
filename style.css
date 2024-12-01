@@ -15,7 +15,7 @@ body {
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow-x: hidden;
-    animation: blockScroll 4.5s forwards;
+    animation: blockScroll 4.1s forwards;
 }
 @keyframes blockScroll {
     0% {
@@ -28,26 +28,25 @@ body {
         overflow: auto;
     }
 }
-header, #menu,  #saudacao,  section {
-    animation: showw 4.5s forwards;
+
+header, #menu,  #saudacao, section {
+    animation: showw 4.1s forwards;
 }
 @keyframes showw {
     0% {
         display: none;
         opacity: 0;
     }
-    80% {
+    99% {
         display: none;
         opacity: 0;
-    }
-    90% {
-        opacity: 1;
     }
     100% {
         display: flex;
         opacity: 1;
     }
 }
+
 
 
 header {
@@ -165,3 +164,4 @@ section article p {
 section article strong {
     color: var(--corRoxoEscuro);
 }
+/* Falta termiar!!!!! */
