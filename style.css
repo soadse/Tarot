@@ -29,7 +29,7 @@ body {
 }
 header {
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-image: url(img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,6 +48,15 @@ section {
 }
 section article {
     margin-top: 40px;
+}
+section article .conteudoImg {
+    margin-bottom: 30px;
+}
+section article .conteudoImg figure img{
+    width: 100%;
+}
+section article .conteudoImg figcaption {
+    font-size: .7rem;
 }
 section article h1 {
     color: var(--corRoxoEscuro);
