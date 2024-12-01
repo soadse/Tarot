@@ -141,13 +141,14 @@ section article {
     margin-top: 40px;
 }
 section article .conteudoImg {
-    margin-bottom: 30px;
-}
-section article .conteudoImg figure img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    margin: 10px 0px 10px 0;
 }
-section article .conteudoImg figcaption {
-    font-size: .7rem;
+section article .conteudoImg img {
+    width: 60%;
 }
 section article h1 {
     color: var(--corRoxoEscuro);
