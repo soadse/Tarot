@@ -14,9 +14,14 @@
 @keyframes closed {
     0% {
         display: flex;
+        opacity: 1;
+    }
+    80% {
+        display: flex;
+        opacity: 1;
     }
     90% {
-        opacity: 1;
+        opacity: 0;
     }
     100% {
         display: none;
