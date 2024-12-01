@@ -77,14 +77,12 @@ header div .bola.b1 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    border: 1px solid black;
 }
 header div .bola.b2 {
     background-image: url(img/lua.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    border: 1px solid black;
 }
 
 
