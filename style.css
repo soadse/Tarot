@@ -13,8 +13,9 @@
 body {
     width: 100vw;
     height: 100vh;
-    animation: blockScroll 4.5s forwards;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow-x: hidden;
+    animation: blockScroll 4.5s forwards;
 }
 @keyframes blockScroll {
     0% {
