@@ -245,8 +245,8 @@ section article strong {
 } 
 section #sobe {
     position: fixed;
-    left: 330px;
-    top: 680px;
+    right: 0;
+    bottom: 0;
     width: 40px;
     height: 54px;
     background-image: url(img/seta.png);
@@ -257,7 +257,7 @@ section #sobe {
     animation-timeline: view();
     animation-range: entry 100% cover 100%;
 }
-@keyframes sobe {
+/* @keyframes sobe {
     0% {
         opacity: 0;
         display: none;
@@ -266,7 +266,7 @@ section #sobe {
         opacity: 1;
         display: flex;
     }
-}
+} */
 /* Fim do bloco de conteudo */
 
 
