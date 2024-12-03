@@ -1,4 +1,5 @@
 let corpo = document.body
+let cabeca = document.getElementsByTagName("header")
 let itemMenuOpen = document.getElementById('itemMenuOpen')
 let itemMenuClose = document.getElementById('itemMenuClose')
 let itemMenu = document.querySelectorAll('.itemMenu')
@@ -16,6 +17,9 @@ let listaConteudo = document.getElementsByTagName("li")
 
 
 sol.addEventListener('click', () => {
+    for(let header of cabeca){
+        header.style.backgroundImage = "url('img/fundo_lua-transparente.png')"
+    }
     sol.style.display = 'none'
     lua.style.display = 'flex'
     sol.style.animation = 'sol 1s forwards'
@@ -32,6 +36,9 @@ sol.addEventListener('click', () => {
 })
 
 lua.addEventListener('click', () => {
+    for(let header of cabeca){
+        header.style.backgroundImage = "url('img/fundo_sol-transparente.png')"
+    }
     lua.style.display = 'none'
     sol.style.display = 'flex'
     corpo.style.background = 'white'
