@@ -18,7 +18,7 @@ let listaConteudo = document.getElementsByTagName("li")
 
 sol.addEventListener('click', () => {
     for(let header of cabeca){
-        header.style.backgroundImage = "url('img/fundo_lua-transparente.png')"
+        header.style.backgroundImage = "url('img/fundo_lua.png')"
     }
     sol.style.display = 'none'
     lua.style.display = 'flex'
@@ -37,7 +37,7 @@ sol.addEventListener('click', () => {
 
 lua.addEventListener('click', () => {
     for(let header of cabeca){
-        header.style.backgroundImage = "url('img/fundo_sol-transparente.png')"
+        header.style.backgroundImage = "url('img/fundo_sol.png')"
     }
     lua.style.display = 'none'
     sol.style.display = 'flex'
