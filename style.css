@@ -260,7 +260,7 @@ section #sobe {
     background-size: contain;
     animation: btnSobe linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 5%;
+    animation-range: entry 0% cover 10%;
 }
 @keyframes btnSobe {
     0% {
