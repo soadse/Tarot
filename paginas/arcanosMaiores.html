@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/tarot-icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cards.css">
+    <script src="../js/cards.js" defer></script>
+    <script src="../js/arcanos.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+    <title>Tarot Místico</title>
+</head>
+<body>
+    <header id="inicioPag">
+        <div>
+            <span class="bola" id="sol"></span>
+            <span class="bola" id="lua"></span>
+        </div>
+    </header>
+
+
+    <nav id="menu">
+        <a href="#" id="itemMenuOpen"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2E195C"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        <a href="../index.html" class="itemMenu">Página Inicial</a>
+        <a href="#" class="itemMenu">Arcano pessoal</a>
+        <a href="#" class="itemMenu">Tiragem de cartas</a>
+        <a href="#" class="itemMenu">Carta do dia</a>
+        <a href="#" class="itemMenu" id="itemMenuClose"><span class="material-symbols-outlined">close</span></a>
+    </nav>
+
+    
+    <section id="apresentacao">
+        <h1>O que são os Arcanos Maiores?</h1>
+        <p>Os Arcanos Maiores são o coração do Tarot, constituídos por 22 cartas que retratam temas profundos e significativos. Cada carta é um espelho de nossas experiências, trazendo mensagens que nos conectam com a essência da jornada humana.</p>
+    </section>
+
+
+    <section id="containerBusca">
+        <label for="inputBusca">Digite o nome ou número do arcano para busca:</label>
+        <input type="text" placeholder="Exemplo: O louco" name="busca" id="inputBusca">
+        <button id="btnBusca">Buscar</button>
+    </section>
+
+
+    <section class="containerCard louco" style="display: none;">
+        <article class="card">
+            <p><strong class="nomeCard">O Louco:</strong> O início da jornada, potencial ilimitado e novas posibilidades.</p>
+            <img src="../img/arcanos_maiores/o-louco.png" alt="">
+            <p>O Louco é uma das cartas mais fascinantes e enigmáticas do Tarot. Representando o Arcano Maior de número zero (ou às vezes vinte e dois, dependendo do baralho), essa carta simboliza novos começos, liberdade e potencial ilimitado.</p>
+        </article>
+
+        <article>
+            <h3>Significados Gerais do Louco</h3>
+            <p><strong>Novo Começo:</strong> O Louco frequentemente aparece no início de uma nova jornada, indicando um passo corajoso em direção ao desconhecido. Ele é o arquétipo do aventureiro que deixa para trás o que é familiar em busca de novas experiências.</p>
+            <p><strong>Liberdade e Espontaneidade:</strong> Ele representa a liberdade e a espontaneidade, incitando a seguir o coração e confiar no fluxo da vida, mesmo sem saber exatamente o que está por vir.</p>
+            <p><strong>Inocência e Confiança:</strong> Com a sua atitude despreocupada, o Louco nos lembra da importância de confiar no universo e manter uma mente aberta. Sua inocência e otimismo são suas maiores forças.</p>
+            <p><strong>Riscos e Impulso:</strong> Esta carta também avisa sobre a necessidade de equilíbrio. Embora a coragem seja valiosa, é importante considerar os riscos e evitar ações imprudentes.</p>
+        </article>
+
+        <article>
+            <h3>Simbolismo da Carta</h3>
+            <p><strong>Caminhada:</strong> O Louco é frequentemente retratado caminhando com uma pequena trouxa, simbolizando a leveza e a ausência de preocupações materiais.</p>
+            <p><strong>Cachorro:</strong> Um cachorro geralmente o acompanha, representando lealdade e proteção, mas também o chamado da razão tentando moderar sua impulsividade.</p>
+            <p><strong>Penhasco:</strong> Às vezes, ele é mostrado perto de um penhasco, simbolizando os perigos que podem surgir quando se segue um caminho sem planejamento.</p>
+        </article>
+
+        <article>
+            <h3>Interpretação em Leitura</h3>
+            <p><strong>No Amor:</strong> Indica novas aventuras românticas ou a necessidade de trazer mais liberdade e espontaneidade ao relacionamento.</p>
+            <p><strong>Na Carreira:</strong> Sinaliza um novo projeto, mudança de carreira ou a coragem de seguir sua verdadeira paixão.</p>
+            <p><strong>Na Vida Pessoal:</strong> Sugere um período de crescimento pessoal, exploração e autodescoberta.</p>
+            <p class="finalTxt">O Louco é um lembrete poderoso de que a vida é uma jornada cheia de surpresas e oportunidades. Abraçar a incerteza e confiar no processo é a chave para descobrir novos horizontes.</p>
+        </article>
+    </section>
+
+    <section class="containerCard mago" style="display: none;">
+        <article class="card">
+            <p><strong class="nomeCard">O Mago</strong> Simbolizando o poder de transformar ideias em realidade através da ação consciente e criatividade</p>
+            <img src="../img/arcanos_maiores/o-mago.png" alt="">
+            <p>O Mago é uma figura icônica no Tarot, sendo o primeiro dos Arcanos Maiores e carregando o número I (um). Esta carta é rica em simbolismo e frequentemente associada ao poder da manifestação, ação e habilidade.</p>
+        </article>
+
+        <article>
+            <h3>Significados Gerais do Mago</h3>
+            <p><strong>Manifestação e Realização:</strong> O Mago representa a capacidade de transformar ideias em realidade. Ele é o mestre da manifestação, usando suas habilidades e recursos para criar o que deseja.</p>
+            <p><strong>Confiança e Habilidade:</strong> Ele simboliza confiança, destreza e a habilidade de manipular elementos para atingir objetivos. O Mago nos lembra do poder que temos dentro de nós para influenciar nosso destino.</p>
+            <p><strong>Início de um Novo Ciclo:</strong> Muitas vezes, ele aparece no início de um novo projeto ou fase da vida, incentivando a usar as habilidades e talentos próprios para avançar.</p>
+            <p><strong>Conexão entre o Céu e a Terra:</strong> O Mago atua como um canal entre o mundo espiritual e o material, simbolizando a integração e o equilíbrio entre ambos.</p>
+        </article>
+
+        <article>
+            <h3>Simbolismo da Carta</h3>
+            <p><strong>Mesa de Trabalho:</strong> O Mago é frequentemente retratado com uma mesa diante dele, sobre a qual estão os quatro símbolos dos naipes do Tarot (cálice, espada, pentáculo e bastão). Isso representa o domínio sobre os quatro elementos e a totalidade dos recursos disponíveis.</p>
+            <p><strong>Postura:</strong> A clássica postura do Mago, com uma mão apontando para o céu e a outra para a terra, simboliza a frase "assim na terra como no céu", indicando sua capacidade de canalizar a energia divina para o mundo material.</p>
+            <p><strong>Lemniscata (∞):</strong> O símbolo do infinito geralmente aparece acima de sua cabeça ou em sua cintura, representando o infinito poder e potencial.</p>
+        </article>
+
+        <article>
+            <h3>Interpretação em Leitura</h3>
+            <p><strong>No Amor:</strong> Indica uma fase de intensa conexão e o potencial para manifestar um relacionamento desejado. Sugere usar habilidades de comunicação e confiança para fortalecer laços.</p>
+            <p><strong>Na Carreira:</strong> Sinaliza novas oportunidades e a capacidade de usar talentos pessoais para alcançar objetivos. É um bom presságio para quem inicia um novo negócio ou projeto.</p>
+            <p><strong>Na Vida Pessoal:</strong> Representa autoconfiança, domínio de habilidades pessoais e a capacidade de tomar controle sobre sua própria vida. Incentiva a ação e a iniciativa.</p>
+            <p class="finalTxt">O Mago é uma carta de poder, potencial e realização. Ele nos lembra de que temos as ferramentas e o poder para criar a realidade que desejamos, desde que tenhamos a confiança e a habilidade para usá-las.</p>
+        </article>
+    </section>
+
+
+    <footer>
+        <a href="#">@Tarot Místico</a>
+    </footer>
+</body>
+</html>
