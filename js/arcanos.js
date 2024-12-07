@@ -1,6 +1,7 @@
 let inputBusca = document.getElementById('inputBusca')
 let btnBusca = document.getElementById('btnBusca')
 let containerCard = document.getElementById('containerCard')
+
 let louco = document.querySelector('.louco')
 let mago = document.querySelector('.mago')
 let sacerdotisa = document.querySelector('.sacerdotisa')
@@ -23,6 +24,13 @@ let lua = document.querySelector('.lua')
 let sol = document.querySelector('.sol')
 let julgamento = document.querySelector('.julgamento')
 let mundo = document.querySelector('.mundo')
+
+
+
+
+
+
+
 
 
 btnBusca.addEventListener('click', () => {
