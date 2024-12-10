@@ -239,8 +239,7 @@ section article img {
 
 /* Bloco de roda pé */
 footer {
-    position: relative;
-    top: 0%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
