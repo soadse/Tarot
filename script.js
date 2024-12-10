@@ -12,7 +12,6 @@ let listaConteudo = document.getElementsByTagName("li")
 let claro = document.querySelector('claro')
 let escuro = document.querySelector('escuro')
 
-// As cores estão em teste
 
 
 

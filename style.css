@@ -164,11 +164,11 @@ header div .escuro {
 #menu .itemMenu:not(:hover) {
     transition: all .3s;
 }
-#menu #itemMenuOpen:hover {
+#menu .itemMenuOpen:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
     transition: all .3s;
 }
-#menu #itemMenuOpen:not(:hover) {
+#menu .itemMenuOpen:not(:hover) {
     transition: all .3s;
 } /* Fim do bloco de menu*/
 

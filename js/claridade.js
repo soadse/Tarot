@@ -3,8 +3,6 @@ let cabeca = document.getElementsByTagName("header")
 let itemMenuOpen = document.getElementById('itemMenuOpen')
 let itemMenuClose = document.getElementById('itemMenuClose')
 let itemMenu = document.querySelectorAll('.itemMenu')
-let claro = document.querySelector('.claro')
-let escuro = document.querySelector('.escuro')
 let paragrafros = document.getElementsByTagName("p")
 let titulo01 = document.getElementsByTagName("h1")
 let titulo02 = document.getElementsByTagName("h2")
@@ -13,6 +11,8 @@ let tituloLista = document.getElementsByTagName("ol")
 let listaConteudo = document.getElementsByTagName("li")
 let inputBuscaColor = document.getElementById('inputBusca')
 let respostaa = document.getElementById('resposta')
+let claro = document.querySelector('.claro')
+let escuro = document.querySelector('.escuro')
 
 
 
