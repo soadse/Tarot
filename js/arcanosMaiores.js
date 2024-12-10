@@ -1,4 +1,3 @@
-let lista = ['louco', 'mago', 'sacerdotisa', 'imperatriz', 'imperador']
 let inputBusca = document.getElementById('inputBusca')
 let btnBusca = document.getElementById('btnBusca')
 let containerCard = document.getElementById('containerCard')
@@ -26,8 +25,6 @@ let luaa = document.querySelector('.lua')
 let soll = document.querySelector('.sol')
 let julgamento = document.querySelector('.julgamento')
 let mundo = document.querySelector('.mundo')
-
-
 
 btnBusca.addEventListener('click', () => {
     louco.style.display = 'none'

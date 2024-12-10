@@ -56,7 +56,7 @@ header div .bola {
     border-radius: 50%;
 }
 /* A animação do sol está dentro do JS */
-header div #sol {
+header div .claro {
     display: flex;
     background-image: url(../img/sol.png);
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@ header div #sol {
         transform: translateX(36px);
     }
 }
-header div #lua {
+header div .escuro {
     display: none;
     background-image: url(../img/lua.png);
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@ section article img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50px;
+    margin: 10px;
 }
 
 

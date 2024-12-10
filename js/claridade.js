@@ -3,8 +3,8 @@ let cabeca = document.getElementsByTagName("header")
 let itemMenuOpen = document.getElementById('itemMenuOpen')
 let itemMenuClose = document.getElementById('itemMenuClose')
 let itemMenu = document.querySelectorAll('.itemMenu')
-let sol = document.getElementById('sol')
-let lua = document.getElementById('lua')
+let claro = document.querySelector('.claro')
+let escuro = document.querySelector('.escuro')
 let paragrafros = document.getElementsByTagName("p")
 let titulo01 = document.getElementsByTagName("h1")
 let titulo02 = document.getElementsByTagName("h2")
@@ -12,16 +12,18 @@ let titulo03 = document.getElementsByTagName("strong")
 let tituloLista = document.getElementsByTagName("ol")
 let listaConteudo = document.getElementsByTagName("li")
 let inputBuscaColor = document.getElementById('inputBusca')
+let respostaa = document.getElementById('resposta')
 
 
 
-sol.addEventListener('click', () => {
-    sol.style.display = 'none'
-    lua.style.display = 'flex'
-    sol.style.animation = 'sol 1s forwards'
+claro.addEventListener('click', () => {
+    claro.style.display = 'none'
+    escuro.style.display = 'flex'
+    claro.style.animation = 'sol 1s forwards'
     corpo.style.background = '#121212'
     inputBuscaColor.style.color = '#E5E6EA'
     inputBuscaColor.style.borderBottom = '1px solid #E5E6EA'
+    respostaa.style.color = '#E5E6EA'
     for(let header of cabeca){
         header.style.backgroundImage = "url('../img/fundo_lua.png')"
     }
@@ -36,12 +38,13 @@ sol.addEventListener('click', () => {
     }
 })
 
-lua.addEventListener('click', () => {
-    lua.style.display = 'none'
-    sol.style.display = 'flex'
+escuro.addEventListener('click', () => {
+    escuro.style.display = 'none'
+    claro.style.display = 'flex'
     corpo.style.background = 'white'
     inputBuscaColor.style.color = 'black'
     inputBuscaColor.style.borderBottom = '1px solid black'
+    respostaa.style.color = 'black'
     for(let header of cabeca){
         header.style.backgroundImage = "url('../img/fundo_sol.png')"
     }
