@@ -1,7 +1,7 @@
-let inputBusca = document.getElementById('inputBusca')
-let btnBusca = document.getElementById('btnBusca')
-let containerCard = document.getElementById('containerCard')
-let resposta = document.getElementById('resposta')
+let inputBusca = document.querySelector('.inputBusca')
+let btnBusca = document.querySelector('.btnBusca')
+let containerCard = document.querySelector('.containerCard')
+let resposta = document.querySelector('.resposta')
 
 let louco = document.querySelector('.louco')
 let mago = document.querySelector('.mago')

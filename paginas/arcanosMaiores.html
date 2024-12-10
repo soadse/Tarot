@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="../img/tarot-icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/arcanosMaiores.css">
     <script src="../js/claridade.js" defer></script>
+    <script src="../js/menu.js" defer></script>
     <script src="../js/arcanosMaiores.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
     <title>Tarot Místico</title>
@@ -20,12 +21,12 @@
 
 
     <nav id="menu">
-        <a href="#" id="itemMenuOpen"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2E195C"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        <a href="#" class="itemMenuOpen"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2E195C"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
         <a href="../index.html" class="itemMenu">Página Inicial</a>
         <a href="#" class="itemMenu">Arcano pessoal</a>
         <a href="#" class="itemMenu">Tiragem de cartas</a>
         <a href="#" class="itemMenu">Carta do dia</a>
-        <a href="#" class="itemMenu" id="itemMenuClose"><span class="material-symbols-outlined">close</span></a>
+        <a href="#" class="itemMenu itemMenuClose"><span class="material-symbols-outlined">close</span></a>
     </nav>
 
     
@@ -37,11 +38,11 @@
 
     <section id="containerBusca">
         <label for="inputBusca">Digite o nome ou número do arcano para busca:</label>
-        <input type="text" placeholder="Exemplo: O louco" name="busca" id="inputBusca">
-        <button id="btnBusca">Buscar</button>
+        <input type="text" placeholder="Exemplo: O louco" name="busca" class="inputBusca">
+        <button class="btnBusca">Buscar</button>
     </section>
 
-    <section id="resposta"></section>
+    <section class="resposta"></section>
 
 
     <section class="containerCard louco" style="display: none;">
