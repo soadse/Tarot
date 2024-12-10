@@ -239,14 +239,12 @@ section article img {
 
 /* Bloco de roda pé */
 footer {
-    
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 50px;
     background-color: var(--corRoxoEscuro);
-    margin-top: 30px;
 }
 footer:hover {
     background-color: var(--corRoxa);
