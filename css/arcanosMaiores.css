@@ -161,7 +161,7 @@ section article {
 section article img {
     width: 50%;
 }
-#apresentacao h1 {
+.apresentacao h1 {
     color: var(--corRoxoEscuro);
     text-align: center;
     margin-bottom: 15px;

@@ -33,28 +33,90 @@
         <a href="#" class="itemMenu itemMenuClose"><span class="material-symbols-outlined">close</span></a>
     </nav>
 
-    <section>
-        <h2>O arcano pessoal é um arcano maior do tarot que rege a vida de uma pessoa. Ele pode ser utilizado para compreender padrões financeiros, melhorar a vida material e emocional, e harmonizar a vida.</h2>
+    <section class="apresentacao">
+        <h1>O arcano pessoal é um arcano maior do tarot que rege a vida de uma pessoa.</h1>
+        <p>Ele pode ser utilizado para compreender padrões financeiros, melhorar a vida material e emocional, e harmonizar a vida.</p>
     </section>
 
-    <section id="data">
+    <form id="data">
         <div>
             <label for="dia">Dia:</label>
-            <input type="number" id="dia">
+            <input type="number" id="dia" maxlength="2" required>
         </div>
         <div>
             <label for="mes">Mês:</label>
-            <input type="number" id="mes">
+            <input type="number" id="mes" maxlength="2" required>
         </div>
         <div>
             <label for="ano">Ano:</label>
-            <input type="number" id="ano">
+            <input type="number" id="ano" maxlength="4" required>
         </div>
-        <button id="calcular">CALCULAR</button>
+        <input type="submit" name="" value="CAULCULAR" id="calcular">
+    </form>
+
+    <section class="resposta">
+        <p id="erro"></p>
+        <p id="arcano"></p>
     </section>
 
-    <section id="resultado">
-        <p>teste</p>
+    <section class="containerCard louco" style="display: none;">
+        <article class="card">
+            <p><strong class="nomeCard">O Louco</strong></p>
+            <img src="../img/arcanos_maiores/o-louco.png" alt="">
+            <p>Uma pessoa cujo Arcano Pessoal é 0 é representada pela carta "O Louco" no Tarot. O Louco é um símbolo de novos começos, aventura e liberdade. Aqui estão algumas características e desafios de alguém com o Arcano Pessoal 0:</p>
+        </article>
+        
+        <article>
+            <h3>Características Principais do Louco</h3>
+            <p><strong>Espontaneidade e Aventura:</strong> O Louco é conhecido por sua natureza aventureira e disposição para explorar o desconhecido. Essas pessoas geralmente têm um espírito livre e estão abertas a novas experiências, mesmo que isso signifique correr riscos.</p>
+            <p><strong>Otimismo e Positividade:</strong> Elas tendem a ser otimistas e acreditam no melhor das pessoas e das situações. Esse traço pode levá-las a confiar mais em sua intuição do que em uma lógica rígida.</p>
+            <p><strong>Independência e Liberdade:</strong> Valorizam a liberdade e a independência, muitas vezes preferindo traçar seu próprio caminho em vez de seguir as convenções estabelecidas.</p>
+            <p><strong>Criatividade e Inovação:</strong> A mentalidade aberta e a disposição para experimentar novas ideias fazem delas pessoas criativas e inovadoras. Elas não têm medo de pensar fora da caixa.</p>
+            <p><strong>Despreocupação e Alegria:</strong> Podem ser vistas como despreocupadas ou até mesmo inocentes, abraçando a vida com um senso de alegria e maravilha infantil.</p>
+        </article>
+
+        <article>
+            <h3>Desafios</h3>
+            <p><strong>Impulsividade:</strong> A mesma disposição para correr riscos pode levá-las a ser impulsivas, o que às vezes pode resultar em decisões precipitadas.</p>
+            <p><strong>Falta de Foco:</strong> A constante busca por novas experiências pode dificultar a concentração em um objetivo ou projeto específico.</p>
+            <p><strong>Naïveté:</strong> A confiança nas pessoas e situações pode deixá-las vulneráveis a decepções ou enganos.</p>
+        </article>
+
+        <article>
+            <h3>Exemplos e Inspiração</h3>
+            <p>Alguém com o Arcano Pessoal 0 pode ser visto como uma força da natureza, sempre movendo-se para frente e explorando novos horizontes. Pense em figuras históricas ou contemporâneas conhecidas por suas explorações ousadas ou por mudar paradigmas, como Cristóvão Colombo em suas viagens ao Novo Mundo ou inovadores modernos que desafiam o status quo.</p>
+            <p class="finalTxt">O Louco nos lembra que, às vezes, o primeiro passo em uma nova jornada é simplesmente confiar no processo e no próprio caminho, mesmo quando ele não é totalmente claro.</p>
+        </article>
+    </section>
+
+    <section class="containerCard mago" style="display: none;">
+        <article class="card">
+            <p><strong class="nomeCard">O Mago</strong></p>
+            <img src="../img/arcanos_maiores/o-mago.png" alt="">
+            <p>Uma pessoa cujo Arcano Pessoal é 1 é representada pela carta "O Mago" no Tarot. Esta carta é símbolo de potencial, habilidades e a capacidade de manifestar intenções e desejos. Aqui estão algumas características e desafios de alguém com o Arcano Pessoal 1:</p>
+        </article>
+        
+        <article>
+            <h3>Características Principais do Mago</h3>
+            <p><strong>Autoconfiança e Habilidade:</strong> O Mago é conhecido por sua autoconfiança e habilidade em manipular recursos à sua disposição. Essas pessoas geralmente têm uma forte crença em suas capacidades e habilidades.</p>
+            <p><strong>Criatividade e Inovação:</strong> São criativas e capazes de trazer novas ideias à vida. Elas têm um talento especial para encontrar soluções inovadoras para problemas.</p>
+            <p><strong>Iniciativa e Ação:</strong> O Mago é o mestre do início. Pessoas com este arcano são proativas e não hesitam em tomar a iniciativa. Elas são impulsionadas pela ação e raramente ficam paradas.</p>
+            <p><strong>Comunicação Eficaz:</strong> Elas são comunicadoras eficazes, capazes de expressar suas ideias de forma clara e persuasiva. Têm a habilidade de convencer os outros de suas visões.</p>
+            <p><strong>Foco e Concentração:</strong> Capazes de focar intensamente em seus objetivos e de canalizar suas energias de maneira produtiva. Elas sabem como manter o controle e a disciplina para alcançar o que desejam.</p>
+        </article>
+
+        <article>
+            <h3>Desafios</h3>
+            <p><strong>Arrogância:</strong> A autoconfiança pode, às vezes, se transformar em arrogância. Essas pessoas precisam estar atentas para não subestimar os outros ou se tornarem excessivamente autossuficientes.</p>
+            <p><strong>Manipulação:</strong> Com grandes habilidades de comunicação e persuasão, há um risco de usar essas habilidades de maneira manipuladora.</p>
+            <p><strong>Falta de Paciência:</strong> A necessidade constante de ação e progresso pode levar à impaciência. Essas pessoas podem se frustrar facilmente com atrasos ou obstáculos.</p>
+        </article>
+
+        <article>
+            <h3>Exemplos e Inspiração</h3>
+            <p>Uma pessoa com o Arcano Pessoal 1 pode ser vista como um líder nato, alguém que não apenas inicia projetos, mas também inspira e guia os outros. Pense em figuras históricas ou contemporâneas conhecidas por sua capacidade de transformar visões em realidade, como Steve Jobs, que trouxe inovação para o mundo da tecnologia com a Apple, ou Leonardo da Vinci, cuja criatividade e habilidade técnica deixaram um legado duradouro em diversas áreas.</p>
+            <p class="finalTxt">O Mago nos lembra que temos os recursos e habilidades necessários para criar a nossa própria realidade. Ele nos encoraja a usar nosso potencial de maneira consciente e ética.</p>
+        </article>
     </section>
 
     <footer>
