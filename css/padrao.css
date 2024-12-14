@@ -40,64 +40,7 @@ header {
     background-position: center center;
     border-bottom: 1px solid var(--corRoxa);
 }
-header div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "sol lua";
-    width: 80px;
-    height: 40px;
-    border-radius: 50px;
-    margin: 10px 10px 0 0;
-    border: 2px solid var(--corRoxoEscuro);
-    background-color: transparent;
-}
-header div .bola {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-/* A animação do sol está dentro do JS */
-header div .claro {
-    display: flex;
-    background-image: url(../img/sol.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    grid-area: sol;
-}
-@keyframes sol {
-    0% {
-        opacity: 0;
-        transform: rotate(0deg);
-        transform: translateX(0px);
-    }
-    100% {
-        opacity: 1;
-        transform: rotate(360deg);
-        transform: translateX(36px);
-    }
-}
-header div .escuro {
-    display: none;
-    background-image: url(../img/lua.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    grid-area: lua;
-    animation: lua 1s forwards;
-}
-@keyframes lua {
-    0% {
-        opacity: 0;
-        transform: rotate(0deg);
-        transform: translateX(0px);
-    }
-    100% {
-        opacity: 1;
-        transform: rotate(360deg);
-        transform: translateX(-36px);
-    }
-}
+
 
 
 /* Bloco de menu */
@@ -172,6 +115,10 @@ section article img {
     border-radius: 0 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.500);
 }
+.apresentacao h3 {
+    color: var(--corRoxoEscuro);
+    text-align: center;
+}
 #containerBusca {
     display: flex;
     justify-content: center;
@@ -212,7 +159,7 @@ section article img {
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin: 20px;
+    margin: 20px 0 10px 0;
     font-size: 1.2rem;
     text-align: center;
 }
@@ -258,7 +205,6 @@ section article img {
 #data input[type="submit"]:hover {
     background-color: var(--corRoxa);
     box-shadow: 0 0 0 black;
-
 }
 
 
@@ -273,9 +219,6 @@ section article img {
 }
 .containerCard .card .nomeCard {
     font-size: 1.5rem;
-}
-.containerCard article .finalTxt {
-    margin-top: 30px;
 }
 .containerCard article h3 {
     margin-bottom: 10px;
