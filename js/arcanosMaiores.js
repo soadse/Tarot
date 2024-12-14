@@ -53,19 +53,19 @@ btnBusca.addEventListener('click', () => {
     if(inputBusca.value == ''){
         resposta.innerHTML = `Insira o nome ou número do arcano para busca`
     }
-    else if(inputBusca.value.trim().toUpperCase() == 'O LOUCO' || inputBusca.value.trim().toUpperCase() == 'LOUCO' || inputBusca.value == 0 ){
+    else if(inputBusca.value.trim().toUpperCase() == 'O LOUCO' || inputBusca.value.trim().toUpperCase() == 'LOUCO' || inputBusca.value == 0 || inputBusca.value == 22){
         louco.style.display = 'block'
     } else if(inputBusca.value.trim().toUpperCase() == 'O MAGO' || inputBusca.value.trim().toUpperCase() == 'MAGO' || inputBusca.value == 1){
         mago.style.display = 'block'
-    } else if(inputBusca.value.trim().toUpperCase() == 'A SACERDOTISA' || inputBusca.value.trim().toUpperCase() == 'SACERDOTISA' || inputBusca.value == 2){
+    } else if(inputBusca.value.trim().toUpperCase() == 'A SACERDOTISA' || inputBusca.value.trim().toUpperCase() == 'SACERDOTISA' || inputBusca.value.trim().toUpperCase() == 'A PAPISA' || inputBusca.value.trim().toUpperCase() == 'PAPISA' || inputBusca.value == 2){
         sacerdotisa.style.display = 'block'
     } else if(inputBusca.value.trim().toUpperCase() == 'A IMPERATRIZ' || inputBusca.value.trim().toUpperCase() == 'IMPERATRIZ' || inputBusca.value == 3){
         imperatriz.style.display = 'block'
     } else if(inputBusca.value.trim().toUpperCase() == 'O IMPERADOR' || inputBusca.value.trim().toUpperCase() == 'IMPERADOR' || inputBusca.value == 4){
         imperador.style.display = 'block'
-    } else if(inputBusca.value.trim().toUpperCase() == 'O PAPA' || inputBusca.value.trim().toUpperCase() == 'PAPA' || inputBusca.value == 5){
+    } else if(inputBusca.value.trim().toUpperCase() == 'O PAPA' || inputBusca.value.trim().toUpperCase() == 'PAPA' || inputBusca.value.trim().toUpperCase() == 'O HIEROFANTE' || inputBusca.value.trim().toUpperCase() == 'HIEROFANTE' || inputBusca.value == 5){
         papa.style.display = 'block'
-    } else if(inputBusca.value.trim().toUpperCase() == 'OS ENAMORADOS' || inputBusca.value.trim().toUpperCase() == 'ENAMORADOS' || inputBusca.value == 6){
+    } else if(inputBusca.value.trim().toUpperCase() == 'OS ENAMORADOS' || inputBusca.value.trim().toUpperCase() == 'ENAMORADOS' || inputBusca.value.trim().toUpperCase() == 'OS AMANTES' || inputBusca.value.trim().toUpperCase() == 'AMANTES' || inputBusca.value == 6){
         enamorados.style.display = 'block'
     } else if(inputBusca.value.trim().toUpperCase() == 'O CARRO' || inputBusca.value.trim().toUpperCase() == 'CARRO' || inputBusca.value == 7){
         carro.style.display = 'block'
