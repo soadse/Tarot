@@ -1,63 +1,63 @@
 let agora = new Date();
 let agoraAno = agora.getFullYear();
-let bd = document.body
-let dia = document.getElementById('dia')
-let mes = document.getElementById('mes')
-let ano = document.getElementById('ano')
-let erro = document.getElementById('erro')
-let arcano = document.getElementById('arcano')
-let calcular = document.getElementById('calcular')
+let bd = document.body;
+let dia = document.getElementById('dia');
+let mes = document.getElementById('mes');
+let ano = document.getElementById('ano');
+let erro = document.getElementById('erro');
+let arcano = document.getElementById('arcano');
+let calcular = document.getElementById('calcular');
 
-let louco = document.querySelector('.louco')
-let mago = document.querySelector('.mago')
-let sacerdotisa = document.querySelector('.sacerdotisa')
-let imperatriz = document.querySelector('.imperatriz')
-let imperador = document.querySelector('.imperador')
-let papa = document.querySelector('.papa')
-let enamorados = document.querySelector('.enamorados')
-let carro = document.querySelector('.carro')
-let justica = document.querySelector('.justica')
-let eremita = document.querySelector('.eremita')
-let roda = document.querySelector('.roda')
-let forca = document.querySelector('.forca')
-let enforcado = document.querySelector('.enforcado')
-let morte = document.querySelector('.morte')
-let temperanca = document.querySelector('.temperanca')
-let diabo = document.querySelector('.diabo')
-let torre = document.querySelector('.torre')
-let estrela = document.querySelector('.estrela')
-let luaa = document.querySelector('.lua')
-let soll = document.querySelector('.sol')
-let julgamento = document.querySelector('.julgamento')
-let mundo = document.querySelector('.mundo')
+let louco = document.querySelector('.louco');
+let mago = document.querySelector('.mago');
+let sacerdotisa = document.querySelector('.sacerdotisa');
+let imperatriz = document.querySelector('.imperatriz');
+let imperador = document.querySelector('.imperador');
+let papa = document.querySelector('.papa');
+let enamorados = document.querySelector('.enamorados');
+let carro = document.querySelector('.carro');
+let justica = document.querySelector('.justica');
+let eremita = document.querySelector('.eremita');
+let roda = document.querySelector('.roda');
+let forca = document.querySelector('.forca');
+let enforcado = document.querySelector('.enforcado');
+let morte = document.querySelector('.morte');
+let temperanca = document.querySelector('.temperanca');
+let diabo = document.querySelector('.diabo');
+let torre = document.querySelector('.torre');
+let estrela = document.querySelector('.estrela');
+let luaa = document.querySelector('.lua');
+let soll = document.querySelector('.sol');
+let julgamento = document.querySelector('.julgamento');
+let mundo = document.querySelector('.mundo');
 
 document.getElementById('data').addEventListener('submit', (e) => {
     e.preventDefault()
-})
+});
 
 calcular.addEventListener('click', () => {
-    louco.style.display = 'none'
-    mago.style.display = 'none'
-    sacerdotisa.style.display = 'none'
-    imperatriz.style.display = 'none'
-    imperador.style.display = 'none'
-    papa.style.display = 'none'
-    enamorados.style.display = 'none'
-    carro.style.display = 'none'
-    forca.style.display = 'none'
-    eremita.style.display = 'none'
-    roda.style.display = 'none'
-    justica.style.display = 'none'
-    enforcado.style.display = 'none'
-    morte.style.display = 'none'
-    temperanca.style.display = 'none'
-    diabo.style.display = 'none'
-    torre.style.display = 'none'
-    estrela.style.display = 'none'
-    luaa.style.display = 'none'
-    soll.style.display = 'none'
-    julgamento.style.display = 'none'
-    mundo.style.display = 'none'
+    louco.style.display = 'none';
+    mago.style.display = 'none';
+    sacerdotisa.style.display = 'none';
+    imperatriz.style.display = 'none';
+    imperador.style.display = 'none';
+    papa.style.display = 'none';
+    enamorados.style.display = 'none';
+    carro.style.display = 'none';
+    forca.style.display = 'none';
+    eremita.style.display = 'none';
+    roda.style.display = 'none';
+    justica.style.display = 'none';
+    enforcado.style.display = 'none';
+    morte.style.display = 'none';
+    temperanca.style.display = 'none';
+    diabo.style.display = 'none';
+    torre.style.display = 'none';
+    estrela.style.display = 'none';
+    luaa.style.display = 'none';
+    soll.style.display = 'none';
+    julgamento.style.display = 'none';
+    mundo.style.display = 'none';
 
     let diaValor = dia.value // pega o valor do input
     let mesValor = mes.value 
@@ -76,7 +76,11 @@ calcular.addEventListener('click', () => {
     } else if(anoValor.length > 0 && anoValor.length < 4 || anoValor <= 0){
         erro.innerHTML = `Ano ${anoValor} não permitido`
         arcano.innerHTML = ''
-    } else {
+    } else if(diaValor.includes('.') || diaValor.includes(',') || mesValor.includes('.') || mesValor.includes(',') || anoValor.includes('.') || anoValor.includes(',')){
+        erro.innerHTML = 'Caracteres especias não permitido'
+        arcano.innerHTML = ''
+    }
+    else {
         // bloco para desmenbrar a variável e tranformar ela em um array
         let arrayDia = diaValor.toString().split('').map(Number) 
         let arrayMes = mesValor.toString().split('').map(Number)
@@ -140,9 +144,6 @@ calcular.addEventListener('click', () => {
             louco.style.display = 'block'
         }
 
-
-
-
         // soma da data se o total passar de 22
         if(somaTotal > 22) {
             let teste = somaTotal.toString().split('').map(Number) // converte para string para depois transformar em um array e por final ele converte para um número
@@ -202,4 +203,4 @@ calcular.addEventListener('click', () => {
         // mes.value = ''
         // ano.value = ''
     }
-})
+});
