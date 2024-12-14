@@ -154,16 +154,6 @@ section article img {
 #containerBusca button:hover {
     background-color: var(--corRoxa);
 }
-.resposta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 20px 0 10px 0;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
 
 /* Bloco de configuração dos inputs de data do arcano pessoal */
 #data {
@@ -210,6 +200,17 @@ section article img {
     font-size: 1.2rem;
     margin-top: 20px;
     color: var(--corRoxa);
+}
+
+/* Bloco da resposta */
+.resposta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0 10px 0;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 
