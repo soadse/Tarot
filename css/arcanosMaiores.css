@@ -2,7 +2,6 @@
 :root {
     --corRoxa: #6A33AA;
     --corRoxoEscuro: #420064;
-    --corFundoHead: #E8E8EA;
     --FonteApple: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --fonteAssinatura: "Dancing Script";
 }
@@ -15,7 +14,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     animation: show 1s forwards;
@@ -39,7 +38,7 @@ header {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    border-bottom: 1px solid var(--corFundoHead);
+    border-bottom: 1px solid var(--corRoxa);
 }
 header div {
     display: grid;
