@@ -9,11 +9,57 @@ let erro = document.getElementById('erro')
 let arcano = document.getElementById('arcano')
 let calcular = document.getElementById('calcular')
 
+let louco = document.querySelector('.louco')
+let mago = document.querySelector('.mago')
+let sacerdotisa = document.querySelector('.sacerdotisa')
+let imperatriz = document.querySelector('.imperatriz')
+let imperador = document.querySelector('.imperador')
+let papa = document.querySelector('.papa')
+let enamorados = document.querySelector('.enamorados')
+let carro = document.querySelector('.carro')
+let forca = document.querySelector('.forca')
+let eremita = document.querySelector('.eremita')
+let roda = document.querySelector('.roda')
+let justica = document.querySelector('.justica')
+let enforcado = document.querySelector('.enforcado')
+let morte = document.querySelector('.morte')
+let temperanca = document.querySelector('.temperanca')
+let diabo = document.querySelector('.diabo')
+let torre = document.querySelector('.torre')
+let estrela = document.querySelector('.estrela')
+let luaa = document.querySelector('.lua')
+let soll = document.querySelector('.sol')
+let julgamento = document.querySelector('.julgamento')
+let mundo = document.querySelector('.mundo')
+
 document.getElementById('data').addEventListener('submit', (e) => {
     e.preventDefault()
 })
 
 calcular.addEventListener('click', () => {
+    louco.style.display = 'none'
+    mago.style.display = 'none'
+    sacerdotisa.style.display = 'none'
+    imperatriz.style.display = 'none'
+    imperador.style.display = 'none'
+    papa.style.display = 'none'
+    enamorados.style.display = 'none'
+    carro.style.display = 'none'
+    forca.style.display = 'none'
+    eremita.style.display = 'none'
+    roda.style.display = 'none'
+    justica.style.display = 'none'
+    enforcado.style.display = 'none'
+    morte.style.display = 'none'
+    temperanca.style.display = 'none'
+    diabo.style.display = 'none'
+    torre.style.display = 'none'
+    estrela.style.display = 'none'
+    luaa.style.display = 'none'
+    soll.style.display = 'none'
+    julgamento.style.display = 'none'
+    mundo.style.display = 'none'
+
     let diaValor = dia.value // pega o valor do input
     let mesValor = mes.value 
     let anoValor = ano.value 
@@ -32,7 +78,6 @@ calcular.addEventListener('click', () => {
         erro.innerHTML = `Ano ${anoValor} não permitido`
         arcano.innerHTML = ''
     } else {
-        
         // bloco para desmenbrar a variável e tranformar ela em um array
         let arrayDia = diaValor.split('').map(Number) 
         let arrayMes = mesValor.split('').map(Number)
@@ -48,7 +93,60 @@ calcular.addEventListener('click', () => {
             let teste = somaTotal.toString().split('').map(Number) // converte para string para depois transformar em um array e por final ele converte para um número
             let arrayTeste = teste.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0)
             arcano.innerHTML = arrayTeste
+
+
+            // Falta validar esse bloco
+            if(arrayTeste == 0){
+                louco.style.display = 'block'
+            } else if(arrayTeste == 1){
+                mago.style.display = 'block'
+            } else if(arrayTeste == 2){
+                sacerdotisa.style.display = 'block'
+            } else if(arrayTeste == 3){
+                imperatriz.style.display = 'block'
+            } else if(arrayTeste == 4){
+                imperador.style.display = 'block'
+            } else if(arrayTeste == 5){
+                papa.style.display = 'block'
+            } else if(arrayTeste == 6){
+                enamorados.style.display = 'block'
+            } else if(arrayTeste == 7){
+                carro.style.display = 'block'
+            } else if(arrayTeste == 8){
+                justica.style.display = 'block'
+            } else if(arrayTeste == 9){
+                eremita.style.display = 'block'
+            } else if(arrayTeste == 10){
+                roda.style.display = 'block'
+            } else if(arrayTeste == 11){
+                forca.style.display = 'block'
+            } else if(arrayTeste == 12){
+                enforcado.style.display = 'block'
+            } else if(arrayTeste == 13){
+                morte.style.display = 'block'
+            } else if(arrayTeste == 14){
+                temperanca.style.display = 'block'
+            } else if(arrayTeste == 15){
+                diabo.style.display = 'block'
+            } else if(arrayTeste == 16){
+                torre.style.display = 'block'
+            } else if(arrayTeste == 17){
+                estrela.style.display = 'block'
+            } else if(arrayTeste == 18){
+                luaa.style.display = 'block'
+            } else if(arrayTeste == 19){
+                soll.style.display = 'block'
+            } else if(arrayTeste == 20){
+                julgamento.style.display = 'block'
+            } else if(arrayTeste == 21){
+                mundo.style.display = 'block'
+            } else if(arrayTeste == 22){
+                louco.style.display = 'block'
+            }
         }
         erro.innerHTML = ''
+        dia.value = ''
+        mes.value = ''
+        ano.value = ''
     }
 })
