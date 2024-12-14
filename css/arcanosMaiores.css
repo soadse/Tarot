@@ -225,8 +225,7 @@ section article img {
 #data div {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    text-align: center;
+    grid-template-columns: 1fr 5fr;
 }
 #data div input {
     outline: 0;
