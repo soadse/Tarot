@@ -93,7 +93,7 @@ calcular.addEventListener('click', () => {
         let arrayTotal = [].concat(...total) // para concatenar uma lista de array em um unico array
         // bloco para somar os valores das arrays
         let somaTotal = arrayTotal.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0)
-        arcano.innerHTML = `O número do seu arcano pessoal é ${somaTotal}`
+        arcano.innerHTML = `O número do seu arcano pessoal é: ${somaTotal}`
 
         if(somaTotal == 0){
             louco.style.display = 'block'
@@ -147,7 +147,7 @@ calcular.addEventListener('click', () => {
         if(somaTotal > 22) {
             let teste = somaTotal.toString().split('').map(Number) // converte para string para depois transformar em um array e por final ele converte para um número
             let arrayTeste = teste.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0)
-            arcano.innerHTML = `O número do seu arcano pessoal é ${arrayTeste}`
+            arcano.innerHTML = `O número do seu arcano pessoal é: ${arrayTeste}`
 
             if(arrayTeste == 0){
                 louco.style.display = 'block'
