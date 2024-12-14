@@ -4,7 +4,6 @@ let bd = document.body
 let dia = document.getElementById('dia')
 let mes = document.getElementById('mes')
 let ano = document.getElementById('ano')
-let soma = [dia, mes, ano]
 let erro = document.getElementById('erro')
 let arcano = document.getElementById('arcano')
 let calcular = document.getElementById('calcular')
@@ -17,10 +16,10 @@ let imperador = document.querySelector('.imperador')
 let papa = document.querySelector('.papa')
 let enamorados = document.querySelector('.enamorados')
 let carro = document.querySelector('.carro')
-let forca = document.querySelector('.forca')
+let justica = document.querySelector('.justica')
 let eremita = document.querySelector('.eremita')
 let roda = document.querySelector('.roda')
-let justica = document.querySelector('.justica')
+let forca = document.querySelector('.forca')
 let enforcado = document.querySelector('.enforcado')
 let morte = document.querySelector('.morte')
 let temperanca = document.querySelector('.temperanca')
@@ -62,7 +61,7 @@ calcular.addEventListener('click', () => {
 
     let diaValor = dia.value // pega o valor do input
     let mesValor = mes.value 
-    let anoValor = ano.value 
+    let anoValor = ano.value
 
     // validação da data
     if(diaValor > 31 || diaValor <= 0){
@@ -79,14 +78,70 @@ calcular.addEventListener('click', () => {
         arcano.innerHTML = ''
     } else {
         // bloco para desmenbrar a variável e tranformar ela em um array
-        let arrayDia = diaValor.split('').map(Number) 
-        let arrayMes = mesValor.split('').map(Number)
-        let arrayAno = anoValor.split('').map(Number)
-        let total = [arrayDia, arrayMes, arrayAno]
+        let arrayDia = diaValor.toString().split('').map(Number) 
+        let arrayMes = mesValor.toString().split('').map(Number)
+        let arrayAno = anoValor.toString().split('').map(Number)
+        // bloco para remover qualquer zero que esteja dentro da variável
+        let removeZeroDia = arrayDia.filter(elemento => elemento !== 0)
+        let removeZeroMes = arrayMes.filter(elemento => elemento !== 0)
+        let removeZeroAno = arrayAno.filter(elemento => elemento !== 0)
+        // bloco para ajuntar as arrays em uma unica lista de array
+        let total = [removeZeroDia, removeZeroMes, removeZeroAno]
         let arrayTotal = [].concat(...total) // para concatenar uma lista de array em um unico array
-
         // bloco para somar os valores das arrays
         let somaTotal = arrayTotal.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0)
+        arcano.innerHTML = somaTotal
+
+        if(somaTotal == 0){
+            louco.style.display = 'block'
+        } else if(somaTotal == 1){
+            mago.style.display = 'block'
+        } else if(somaTotal == 2){
+            sacerdotisa.style.display = 'block'
+        } else if(somaTotal == 3){
+            imperatriz.style.display = 'block'
+        } else if(somaTotal == 4){
+            imperador.style.display = 'block'
+        } else if(somaTotal == 5){
+            papa.style.display = 'block'
+        } else if(somaTotal == 6){
+            enamorados.style.display = 'block'
+        } else if(somaTotal == 7){
+            carro.style.display = 'block'
+        } else if(somaTotal == 8){
+            justica.style.display = 'block'
+        } else if(somaTotal == 9){
+            eremita.style.display = 'block'
+        } else if(somaTotal == 10){
+            roda.style.display = 'block'
+        } else if(somaTotal == 11){
+            forca.style.display = 'block'
+        } else if(somaTotal == 12){
+            enforcado.style.display = 'block'
+        } else if(somaTotal == 13){
+            morte.style.display = 'block'
+        } else if(somaTotal == 14){
+            temperanca.style.display = 'block'
+        } else if(somaTotal == 15){
+            diabo.style.display = 'block'
+        } else if(somaTotal == 16){
+            torre.style.display = 'block'
+        } else if(somaTotal == 17){
+            estrela.style.display = 'block'
+        } else if(somaTotal == 18){
+            luaa.style.display = 'block'
+        } else if(somaTotal == 19){
+            soll.style.display = 'block'
+        } else if(somaTotal == 20){
+            julgamento.style.display = 'block'
+        } else if(somaTotal == 21){
+            mundo.style.display = 'block'
+        } else if(somaTotal == 22){
+            louco.style.display = 'block'
+        }
+
+
+
 
         // soma da data se o total passar de 22
         if(somaTotal > 22) {
@@ -94,8 +149,6 @@ calcular.addEventListener('click', () => {
             let arrayTeste = teste.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0)
             arcano.innerHTML = arrayTeste
 
-
-            // Falta validar esse bloco
             if(arrayTeste == 0){
                 louco.style.display = 'block'
             } else if(arrayTeste == 1){
@@ -145,8 +198,8 @@ calcular.addEventListener('click', () => {
             }
         }
         erro.innerHTML = ''
-        dia.value = ''
-        mes.value = ''
-        ano.value = ''
+        // dia.value = ''
+        // mes.value = ''
+        // ano.value = ''
     }
 })
