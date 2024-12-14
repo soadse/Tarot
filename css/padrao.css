@@ -261,6 +261,14 @@ section .conterBtn .home {
 }
 /* Fim do bloco de configuração do card */
 
+/* Bloco de randomizar a carda do dia */
+#conterRandon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 /* Bloco de roda pé */
 footer {
