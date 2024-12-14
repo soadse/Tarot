@@ -241,6 +241,7 @@ section article img {
 .containerCard article p {
     margin-bottom: 5px;
 }
+/* Bloco com o botao de subir nos arcanos maiores */
 section .conterBtn {
     display: flex;
     justify-content: flex-end;
