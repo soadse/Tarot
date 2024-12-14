@@ -41,15 +41,15 @@
     <form id="data">
         <div>
             <label for="dia">Dia:</label>
-            <input type="text" id="dia" maxlength="2" inputmode="numeric" required>
+            <input type="text" id="dia" maxlength="2" inputmode="numeric" pattern="[0-9]*" required>
         </div>
         <div>
             <label for="mes">Mês:</label>
-            <input type="text" id="mes" maxlength="2" inputmode="numeric" required>
+            <input type="text" id="mes" maxlength="2" inputmode="numeric" pattern="[0-9]*" required>
         </div>
         <div>
             <label for="ano">Ano:</label>
-            <input type="text" id="ano" maxlength="4" inputmode="numeric" required>
+            <input type="text" id="ano" maxlength="4" inputmode="numeric" pattern="[0-9]*" required>
         </div>
         <input type="submit" name="" value="CAULCULAR" id="calcular">
     </form>
