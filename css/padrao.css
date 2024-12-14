@@ -169,16 +169,18 @@ section article img {
     margin-bottom: 10px;
 }
 #data div {
-    width: 100%;
+    width: 50%;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 1fr;
 }
 #data div input {
+    width: 100%;
     outline: 0;
     border: none;
-    border-bottom: 1px solid #444;
     text-align: center;
     background-color: transparent;
+    
+    font-weight: lighter;
 }
 #data div input, label {
     margin-bottom: 10px;
