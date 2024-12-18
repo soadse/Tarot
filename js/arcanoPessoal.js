@@ -95,7 +95,7 @@ calcular.addEventListener('click', () => {
         let somaTotal = arrayTotal.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0)
         arcano.innerHTML = `O número do seu arcano pessoal é: ${somaTotal}`
 
-        if(somaTotal == 0){
+        if(somaTotal == 0 || somaTotal == 22){
             louco.style.display = 'block'
         } else if(somaTotal == 1){
             mago.style.display = 'block'
@@ -139,8 +139,6 @@ calcular.addEventListener('click', () => {
             julgamento.style.display = 'block'
         } else if(somaTotal == 21){
             mundo.style.display = 'block'
-        } else if(somaTotal == 22){
-            louco.style.display = 'block'
         }
 
         // soma da data se o total passar de 22

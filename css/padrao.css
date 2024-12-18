@@ -228,7 +228,6 @@ section article img {
     flex-direction: column;
     text-align: center;
     font-style: oblique;
-    margin-top: -15px;
 }
 .containerCard .card .nomeCard {
     font-size: 1.5rem;
@@ -273,6 +272,24 @@ section .conterBtn .home {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+#conterRandon #btnRandomizar {
+    height: 40px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: var(--corRoxoEscuro);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 5px black;
+}
+#conterRandon #btnRandomizar:hover {
+    background-color: #6A33AA;
+    box-shadow: none;
+    transition: all .3s;
+}
+#conterRandon #btnRandomizar:not(:hover){
+    transition: all .3s;
 }
 #conterRandon #carregamento {
     width: 50px;
