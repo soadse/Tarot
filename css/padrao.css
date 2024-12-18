@@ -10,11 +10,6 @@
     margin: 0px;
     box-sizing: border-box;
 }
-@media (orientation: landscape) {
-    body {
-        background-color: red;
-    }
-}
 html {
     scroll-behavior: smooth;
 }
