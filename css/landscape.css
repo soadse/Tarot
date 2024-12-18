@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+#conteudo article .conteudoImg img {
+    width: 25%;
+}
+
+.containerCard .card img {
+    width: 25%;
+}

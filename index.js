@@ -6,9 +6,6 @@ let listaConteudo = document.getElementsByTagName("li")
 let claro = document.querySelector('.claro')
 let escuro = document.querySelector('.escuro')
 
-
-
-
 claro.addEventListener('click', () => {
     claro.style.display = 'none'
     escuro.style.display = 'flex'
